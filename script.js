@@ -96,7 +96,7 @@ function displayAircraftInfo(aircraft) {
         "Airbus A320": "🛫 A highly popular narrow-body jet known for its efficiency and fly-by-wire controls.",
         "Airbus A330": "🌍 A twin-engine wide-body aircraft commonly used for long-haul routes.",
         "Airbus A340": "A long-range, four-engine wide-body jet, popular for intercontinental flights",
-        "Airbus A350": "🔋 A modern, fuel-efficient long-haul aircraft featuring advanced aerodynamics.",
+        "airbus A350": "🔋 A modern, fuel-efficient long-haul aircraft featuring advanced aerodynamics.",
         "Airbus A380": "🏢 The world’s largest passenger aircraft, known for its two full decks.",
        
         "F-35": "pew pew plane"
