@@ -1,0 +1,173 @@
+@font-face {
+    font-family: Mouldy-cheese;
+    src: url(MouldyCheeseRegular-WyMWG.ttf);
+}
+
+/* General Styling */
+body {
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #87CEEB;
+    color: #5e2cc9;
+    padding: 10px;
+    padding-left: 5%;
+    font-size: 26px;
+    font-family: Mouldy-cheese, sans-serif;
+}
+header > h2{
+    text-align: left;
+}
+
+/* Main Container */
+main {
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+   
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+/* Drop Zone Styling */
+.drop-zone {
+    border: 3px dashed #C0C0C0;
+    padding: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Highlight when dragging */
+.drop-zone.highlight {
+    background-color: rgba(167, 167, 167, 0.2);
+}
+
+/* Styled Upload Button */
+.upload-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    color: #87CEEB;
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.upload-button img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.upload-button h2 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.upload-button p {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Adjust for small screens */
+@media (max-width: 768px) {
+    .drop-zone {
+        padding: 20px;
+    }
+    .upload-button {
+        font-size: 18px;
+    }
+}
+#loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* From Uiverse.io by SchawnnahJ */ 
+.loader {
+    position: relative;
+    width: 2.5em;
+    height: 2.5em;
+    transform: rotate(165deg);
+   }
+   
+   .loader:before, .loader:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 0.25em;
+    transform: translate(-50%, -50%);
+   }
+   
+   .loader:before {
+    animation: before8 2s infinite;
+   }
+   
+   .loader:after {
+    animation: after6 2s infinite;
+   }
+   
+   @keyframes before8 {
+    0% {
+     width: 0.5em;
+     box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+   
+    35% {
+     width: 2.5em;
+     box-shadow: 0 -0.5em rgba(225, 20, 98, 0.75), 0 0.5em rgba(111, 202, 220, 0.75);
+    }
+   
+    70% {
+     width: 0.5em;
+     box-shadow: -1em -0.5em rgba(225, 20, 98, 0.75), 1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+   
+    100% {
+     box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+   }
+   
+   @keyframes after6 {
+    0% {
+     height: 0.5em;
+     box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+    }
+   
+    35% {
+     height: 2.5em;
+     box-shadow: 0.5em 0 rgba(61, 184, 143, 0.75), -0.5em 0 rgba(233, 169, 32, 0.75);
+    }
+   
+    70% {
+     height: 0.5em;
+     box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75), -0.5em 1em rgba(233, 169, 32, 0.75);
+    }
+   
+    100% {
+     box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+    }
+   }
+   
+   .loader {
+    position: absolute;
+    top: calc(50% - 1.25em);
+    left: calc(50% - 1.25em);
+   }
