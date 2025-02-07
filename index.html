@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirplaneID</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="New Project (2).ico" type="image/x-icon">
+</head>
+<body>
+    <header><h2>AirplaneID</h2></header>
+    
+    <main>
+        <!-- Drop Zone -->
+        <div id="drop-zone" class="drop-zone">
+            <input type="file" id="imageUpload" accept="image/*" onchange="handleFileUpload(event)" hidden />
+            <label for="imageUpload" class="upload-button">
+                <img src="New Project.svg" width="40%" alt="icon of a file">
+                <h2>Click to select <br> JPG, PNG, WEBP</h2>
+                <p>or drag and drop your file here</p>
+            </label>
+        </div>
+        <div id="loader" class="loader" style="display: none;"></div>
+        <div id="label-container"></div>
+        <img id="uploaded-image" style="max-width: 100%; margin-top: 10px; display: none;" />
+    </main>
+<h1>Here is my contact info: brusdalscatering@gmail.com</h1>
+<h2>Thank you for your feedback! :=j</h2>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
